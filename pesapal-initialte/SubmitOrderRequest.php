@@ -3,7 +3,7 @@ include 'RegisterIPN.php';
 $merchantreference = rand(1, 1000000000000000000);
 $phone = "0795065125";
 $amount = 1.00;
-$callbackurl = "http://localhost/response-page.php";
+$callbackurl = "https://68a5dd61000f0d68c3d0.fra.appwrite.run/";
 $branch = "ydb";
 $first_name = "Ian";
 $middle_name = "Munguti";
