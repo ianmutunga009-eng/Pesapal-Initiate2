@@ -1,6 +1,6 @@
 <?php
 include 'acesstoken.php';
-$ipnUrl = "https://d341dafecce8.ngrok-free.app/pesapal/callback.php";
+$ipnUrl = "https://68a5dd61000f0d68c3d0.fra.appwrite.run/";
 if(APP_ENVIROMENT == 'sandbox'){
     $ipnRegistrationUrl = "https://cybqa.pesapal.com/pesapalv3/api/URLSetup/RegisterIPN";
 }elseif(APP_ENVIROMENT == 'live'){
@@ -27,8 +27,8 @@ $response = curl_exec($ch);
 $responseCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 curl_close($ch);
 $data = json_decode($response);
-$ipn_id = $data->ipn_id;
-$ipn_url = $data->url;
+echo $ipn_id = $data->ipn_id;
+echo $ipn_url = $data->url;
 
 
 
